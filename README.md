@@ -57,10 +57,4 @@ No scoreboard mismatches.
 - **Coverage:** 98%+ functional/protocol.
 - **Passes:** All tests; assertions fire 0.
 
-## Directory Structure
-.
-├── rtl/ # Fixed DUT
-├── tb/ # UVM sources
-├── sim/ # Outputs (vcd, ucdb)
-├── scripts/ # Makefile, do-files
-└── docs/ # Spec ref, waveforms PNGs
+  
