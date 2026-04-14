@@ -23,21 +23,6 @@ APB slave memory with clock/reset, supports writes (latches PWDATA) and reads (d
 
 RTL in `rtl/apb_mem.sv` (fixed).
 
-## UVM Testbench Architecture
-top/
-├── rtl/apb_mem.sv (DUT)
-├── tb/
-│ ├── apb_pkg.sv (seq_item, driver, seqr, monitor, agent, sequences)
-│ ├── scoreboard.sv
-│ ├── env.sv
-│ ├── test.sv (base + write/read/rand/rw tests)
-│ └── top.sv (tb top with vif, clock/reset gen)
-└── sim/ (vcd, coverage reports)
-- **Agent**: Active master (driver+seqr+monitor).
-- **Sequences**: `apb_write_seq`, `apb_read_seq`, `apb_rw_seq` (rand 100 trans).
-- **Coverage**: `apb_cov.sv` – 95%+ hit (addr bins, data rand, protocol crosses).
-- **Assertions**: Interface assertions in `apb_if.sv`.
-
 ## Setup & Simulation
 ### Requirements
 - EDA: Questa/ModelSim 2023+, VCS (IEEE UVM 1.2+).
