@@ -41,9 +41,8 @@ UVM_INFO @ 0: Reporter [RNTST] UVM test done PASSED
 Coverage: 98.5% lines, 100% toggles, 95% FSM.
 No scoreboard mismatches.
 
-**Waveform Snapshots:** `sim/base_test.vcd` – View PCLK, signals; verify SETUP/ACCESS, PREADY delay, data match.
-
-**Coverage Report:** `sim/coverage.ucdb` – HTML shows hits.
+**Waveform Snapshots:**
+<img width="1591" height="586" alt="image" src="https://github.com/user-attachments/assets/fbd95abd-1c66-4034-ad82-74e170cf2cd9" />
 
 ## Test Scenarios
 | Test | Description | Transactions | Expected |
